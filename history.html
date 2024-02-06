@@ -1,0 +1,275 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>History</title> 
+    <style> 
+        body { 
+            background-color: #f8f8f8; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        } 
+ 
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background-color: #654321; 
+            padding: 10px 20px; 
+            font-size: 20px; 
+            border-radius: 15px; 
+            height: 60px; 
+        } 
+ 
+        nav ul { 
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+        } 
+ 
+        nav ul li { 
+            display: inline; 
+            margin-right: 30px; 
+            position: sticky; 
+        } 
+ 
+        nav ul li a { 
+            text-decoration: none; 
+            color: #fdfdfd; 
+            font-weight: bold; 
+        } 
+ 
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            background-color: #856749; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            z-index: 1; 
+            border-radius: 10px 10px;  
+        } 
+ 
+        .dropdown:hover .dropdown-content { 
+            display: block; 
+        } 
+ 
+        .dropdown-content a { 
+            color: white; 
+            padding: 12px 20px; 
+            display: block; 
+            text-decoration: none; 
+        } 
+ 
+        .dropdown-content a:hover { 
+            background-color: #654321; 
+        } 
+ 
+        main {  
+            margin-top: auto;   
+            padding: 30px;  
+            flex-grow: 1;  
+            flex-direction: column; 
+            align-items: center 
+        }  
+          
+        main p {  
+            text-align: center;  
+            padding-bottom: 30px; 
+        }  
+  
+        h1 {  
+            background-color: #775735; 
+            color: aliceblue; 
+            border-radius: 10px; 
+            padding: 11px; 
+            text-align: center; 
+        }  
+  
+        h2 {  
+            text-align: center;  
+            color: aliceblue;  
+            background-color: #775735; 
+            border-radius: 10px 10px;  
+            padding: 11px; 
+        }  
+
+        .history1 img { 
+            display: block; 
+            margin: 0 auto;  
+            max-width: 100%;  
+            border: 5px solid #654321; 
+            border-radius: 10px; 
+            width: 40%;  
+            height: auto;  
+            padding-bottom: 20px;
+            transition: opacity 0.5s;
+            animation: fade-in-out 6s infinite;
+        } 
+
+        @keyframes fade-in-out{
+        0%{
+            opacity: 0;
+        }
+        25% {
+            opacity: 1;
+        }
+        75%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+      }
+
+    .animate-fade {
+        opacity: 0;
+        transition: opacity 0.2s;}
+
+        @keyframes slide-up{
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(0)
+        }
+      }
+
+ 
+        footer { 
+            background-color: #654321; 
+            padding: 5px; 
+            text-align: center; 
+            color: white; 
+            border-radius: 10px; 
+            position: relative; 
+            bottom: 0; 
+            width: 100%; 
+        } 
+ 
+        #back-to-top { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            display: none; 
+            background-color: #926b5b; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 15px; 
+            cursor: pointer; 
+        } 
+ 
+        #back-to-top:hover { 
+            background-color: #654321; 
+        } 
+ 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <header> 
+        <div class="logo"> 
+            <img class="logo.png" src="logo.png" alt="picture" width="120px" height="120px"> 
+        </div> 
+ 
+        <nav> 
+            <ul> 
+                <li><a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/home.html">Home</a></li> 
+                <li><a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/Index.html">Index</a></li> 
+                <li class="dropdown"> 
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/about.html">About</a> 
+                    <div class="dropdown-content"> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/about.html">Community Overview</a> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/Mission%20and%20Vision.html#future%20development.html">Mission & Vision</a> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/history.html#ad1">History</a> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/future_development.html">Future Development</a> 
+                    </div> 
+                </li> 
+                <li class="dropdown"> 
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">News and Events</a> 
+                    <div class="dropdown-content">
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">Tropicana Alam Event</a>  
+                      <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">Seoul Getaway At Bandar Alam Suria</a>  
+                      <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">KPSK UiTM Fest 2023</a>  
+                      <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">#AnakAnakMalaysia 2023 Is Back</a>  
+                  </div> 
+                  </li> 
+
+                </li> 
+                <li class="dropdown"> 
+                  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/jobs.html#advertisement.html">Jobs</a> 
+                  <div class="dropdown-content"> 
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/jobs.html#advertisement.html">Advertisement</a>  
+                    
+                </div> 
+                <li><a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/community%20resources.html#">Community Resources</a></li> 
+                 
+            
+            <li class="dropdown"> 
+              <a href="">Contact</a> 
+              <div class="dropdown-content"> 
+                <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/contact%20us.html">Contact us</a>  
+                <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/Feedback%20form.html#community%20resources.html">Feedback Form</a>  
+                
+            </div>  
+
+            </ul> 
+        </nav> 
+    </header>   
+      
+ 
+    <main>  
+ 
+      <h2 id="history">Background History</h2>  
+      <p>  
+          Puncak Alam is a township in Kuala Selangor District, Selangor, Malaysia.  
+      </p>  
+
+      <p>
+          Previously developed from a palm estate holding of Felda (Federal Land Development Authority) within the locale of Bukit Cherakah, this township started its initial development during the late 1990s under the management of Bukit Cherakah Development Sdn. Bhd., a private company based in Shah Alam. Puncak Alam Housing Sdn. Bhd. later took over in 2001 as the principal developer of this township. There are 3 phases in the township, Phase 1 in the southern part (Section 1-6 but only Section 2 is existing), Phase 2 in the middle (Seksyen 7-9), Phase 3 in the north (Seksyen 12-13) and the Alam Suria at the northwest, which also known as Shah Alam 2.  
+      </p>
+
+        <div class="history1"> 
+            <img class="history1.png" src="history1.png" alt="picture" width="120px" height="120px"> 
+        </div> 
+      <p>  
+          First launched with an estimated total area of 14,000 acres (57 km2) for the whole township, subsequent development sees the actual land parcel being apportioned and jointly developed with third-party developers, resulting in the emergence of sub-townships within the vicinity under new names and concepts (such as Alam Perdana, Alam Jaya, Sinar Alam, Ambang Suria, Alam Suria), whilst the initially earmarked land area for Puncak Alam being significantly reduced in size. Eco Grandeur, LBS Alam Perdana and Hillpark are one of the new housing development in this area.  
+      </p>  
+        
+    </main>  
+    <footer> 
+        <p>&copy; 2024 Puncak Alam Is Eye On Social. All Right Reserved.</p> 
+    </footer> 
+ 
+    <button id="back-to-top" onclick="topFunction()">Back to Top</button> 
+ 
+    <script> 
+        var mybutton = document.getElementById("back-to-top"); 
+ 
+        window.onscroll = function () { 
+            scrollFunction(); 
+        }; 
+ 
+        function scrollFunction() { 
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
+                mybutton.style.display = "block"; 
+            } else { 
+                mybutton.style.display = "none"; 
+            } 
+        } 
+ 
+        function topFunction() { 
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        } 
+    </script> 
+ 
+</body> 
+ 
+</html>

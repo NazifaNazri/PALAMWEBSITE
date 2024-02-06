@@ -1,0 +1,325 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Future development</title> 
+    <style> 
+  body { 
+            background-color: #f8f8f8; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        } 
+ 
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            background-color: #654321; 
+            padding: 10px 20px; 
+            font-size: 20px; 
+            border-radius: 15px; 
+            height: 60px; 
+        } 
+ 
+        nav ul { 
+            list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+        } 
+ 
+        nav ul li { 
+            display: inline; 
+            margin-right: 30px; 
+            position: sticky; 
+        } 
+ 
+        nav ul li a { 
+            text-decoration: none; 
+            color: #fdfdfd; 
+            font-weight: bold; 
+        } 
+ 
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            background-color: #856749; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            z-index: 1; 
+            border-radius: 10px 10px;  
+        } 
+ 
+        .dropdown:hover .dropdown-content { 
+            display: block; 
+        } 
+ 
+        .dropdown-content a { 
+            color: white; 
+            padding: 12px 20px; 
+            display: block; 
+            text-decoration: none; 
+        } 
+ 
+        .dropdown-content a:hover { 
+            background-color: #654321; 
+        } 
+ 
+        main {  
+            margin-top: auto;   
+            padding: 30px;  
+            flex-grow: 1;  
+            flex-direction: column; 
+            align-items: center 
+        }  
+          
+        main p {  
+            text-align: center;  
+            padding-bottom: 30px; 
+            font-family: 'Times New Roman', Times, serif;
+            
+            
+        }  
+  
+        h1 {  
+            background-color: #654321; 
+            color: aliceblue; 
+            border-radius: 10px; 
+            padding: 11px; 
+            text-align: center; 
+        }  
+  
+        h2 {  
+            text-align: center;  
+            color: aliceblue;  
+            background-color: #775735; 
+            border-radius: 10px 10px;  
+            padding: 11px; 
+            
+        }  
+
+        .future-development1 img { 
+            display: block; 
+            margin: 0 auto;  
+            max-width: 100%;  
+            border: 5px solid #654321; 
+            border-radius: 10px; 
+            width: 40%;  
+            height: auto; 
+            transition: opacity 0.5s;
+            animation: fade-in-out 6s infinite; 
+        } 
+
+        .future-development2 img { 
+            display: block; 
+            margin: 0 auto;  
+            max-width: 100%;  
+            border: 5px solid #654321; 
+            border-radius: 10px; 
+            width: 40%;  
+            height: auto;  
+            transition: opacity 0.5s;
+            animation: fade-in-out 6s infinite;
+        } 
+
+        @keyframes fade-in-out{
+        0%{
+            opacity: 0;
+        }
+        25% {
+            opacity: 1;
+        }
+        75%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+      }
+
+    .animate-fade {
+        opacity: 0;
+        transition: opacity 0.2s;}
+
+        @keyframes slide-up{
+        0%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(0)
+        }
+      }
+
+ 
+      footer {
+            background-color: #654321;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    .container{
+        max-width: 500px;
+        margin: 0 auto;
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+ 
+    #back-to-top { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            display: none; 
+            background-color: #926b5b; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 15px; 
+            cursor: pointer; 
+        } 
+ 
+        #back-to-top:hover { 
+            background-color: #654321; 
+        } 
+
+       
+    
+ 
+    </style> 
+</head> 
+ 
+<body> 
+ 
+    <header> 
+        <div class="logo"> 
+            <img class="logo.png" src="palam.logo.png" alt="picture" width="120px" height="120px"> 
+        </div> 
+ 
+        <nav> 
+            <ul> 
+                <li><a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/home.html">Home</a></li> 
+                <li><a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/Index.html">Index</a></li> 
+                <li class="dropdown"> 
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/about.html">About</a> 
+                    <div class="dropdown-content"> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/about.html">Community Overview</a> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/Mission%20and%20Vision.html#future%20development.html">Mission & Vision</a> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/history.html#ad1">History</a> 
+                        <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/future_development.html">Future Development</a> 
+                    </div> 
+                </li> 
+                <li class="dropdown"> 
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">News and Events</a> 
+                    <div class="dropdown-content">
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">Tropicana Alam Event</a>  
+                      <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">Seoul Getaway At Bandar Alam Suria</a>  
+                      <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">KPSK UiTM Fest 2023</a>  
+                      <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">#AnakAnakMalaysia 2023 Is Back</a>  
+                  </div> 
+                  </li> 
+
+                </li> 
+                <li class="dropdown"> 
+                  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/jobs.html#advertisement.html">Jobs</a> 
+                  <div class="dropdown-content"> 
+                    <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/jobs.html#advertisement.html">Advertisement</a>  
+                    
+                </div> 
+                <li><a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/community%20resources.html#">Community Resources</a></li> 
+                 
+            
+            <li class="dropdown"> 
+              <a href="">Contact</a> 
+              <div class="dropdown-content"> 
+                <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/contact%20us.html">Contact us</a>  
+                <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/Feedback%20form.html#community%20resources.html">Feedback Form</a>  
+                
+            </div>  
+
+            </ul> 
+        </nav> 
+    </header> 
+      <main>
+        <h2 id="future-development">Future Development</h2> 
+<p>Development plan dated 9 September 2008 released by Kuala Selangor Municipal Council (MPKS), the local authority responsible for the administration of the Kuala Selangor district, among others, disclosed that future expansion for this township would include the completion of a Universiti Teknologi MARA (UiTM) by the year 2014, on an area demarcated of 1,085.75 acres (4.3939 km2), comprising 15 faculties capable of supporting 41,000 students and staffs. The same report projected that 65,798 additional units of houses/residences would be completed by the year 2015, capable of accommodating 350,000 population as compared to the current reported population of 25,000. 
+</p> 
+<p> 
+    The latest Local Planning Masterplan for the year 2015 released by MPKS envision the addition of a water theme park and also a Light Rail Transit facility (linking Bestari Jaya, Puncak Alam and Shah Alam). 
+</p> 
+ 
+<div class="future-development1"> 
+    <img class="future-development1.png" src="future.development1.jpg" alt="picture" width="120px" height="120px"> 
+</div> 
+
+<p>
+    The first serviced apartment in Puncak Alam, Sentrovue, by Villa Avenue Housing Development Sdn Bhd, has only 10 units left, according to the developer.Other developments in the area include Shah Alam 2 by IJM Land, Puncak Bestari by Worldwide Holdings Bhd, Bandar Saujana Utama by Glomac, and Pelangi Seri Alam by Metro KL City Sdn Bhd.Meanwhile, LBS Bina Group, which has acquired 909.01 acres in Ijok, will unveil its development plans in the middle of this year. Chua says the land is located in the Puncak Alam vicinity.Property consultants agree that the establishment of UiTM some years ago has impacted rental rates around Puncak Alam.
+</p>
+
+<p> 
+    Amenities: 
+<ul> 
+    <li>Walking distance to Econsave and Alam Jaya Commercial Center shop lot</li> 
+    <li>7.7 km to UiTM Puncak Alam</li> 
+    <li>4 km to Masjid Puncak Alam</li> 
+    <li>2.8 km to Puncak Alam National School, Petrol Station</li> 
+    <li>2.5 km to McDonald's, Lotus's Puncak Alam</li> 
+    <li>17 km to Setia Alam</li> 
+</ul> 
+</p> 
+ 
+<div class="future-development2"> 
+    <img class="future-development2.png" src="future.development2.jpg" alt="picture" width="120px" height="120px"> 
+</div> 
+
+<p>The commercial buildings in the new townships will hopefully attract small and medium enterprises (SMEs) to Puncak Alam and create more local economic activities. The new townships developed by Eco World and LBS Bina have industrial components to attract light and medium industries, which can complement the residential townships.This will create more jobs. Besides, the area will see an increase in population and improvement in living standards and the environment. Metro Homes Sdn Bhd director See Kok Loong says these developments will transform Puncak Alam into a self-sustaining township like Subang Jaya.</p>
+
+<p> 
+    High-rise projects: 
+    <ul> 
+        <li>LBS Melodi Perdana</li> 
+        <li>LBS Irina by Myra</li> 
+    </ul> 
+</p> 
+
+<div class="footer">
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Puncak Alam Is Eye On Social. All Right Reserved.</p>
+        </div>
+    </footer>
+    </div>
+<button id="back-to-top" onclick="topFunction()">Back to Top</button> 
+
+<script> 
+    var mybutton = document.getElementById("back-to-top"); 
+
+    window.onscroll = function () { 
+        scrollFunction(); 
+    }; 
+
+    function scrollFunction() { 
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { 
+            mybutton.style.display = "block"; 
+        } else { 
+            mybutton.style.display = "none"; 
+        } 
+    } 
+
+    function topFunction() { 
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    } 
+</script> 
+
+      </main>
+</body> 
+ 
+</html>

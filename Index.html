@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <body style="background-color:rgb(243, 222, 191)"></body>
+  <style>
+    
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      .header {
+        background-color: #654321;
+        color: #9f8308;
+        text-align: center;
+        padding: 1em;
+
+      }
+
+      .header h1 {
+        font-size: 40px;
+      }
+
+     .navbar {
+        overflow: hidden;
+        background-color: rgb(243, 222, 191);
+        position: sticky;
+        position: -webkit-sticky; 
+        top: 0;
+      }
+
+      /* Style the navigation bar links */
+      .navbar a {
+        float: center;
+        display: block;
+        color: #886565;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+      }
+
+      /* Change color on hover */
+      .navbar a:hover {
+        background-color: #9f8308;
+        color: white;
+      }
+
+      /* Active/current link */
+      .navbar a.active {
+        background-color: #9f8308;
+        color: white;
+      }
+
+      /* Column container */
+      .row {  
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        -ms-flex: 30%; /* IE10 */
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      /* Main column */
+      .main {   
+        -ms-flex: 70%; /* IE10 */
+        flex: 70%;
+        background-color: #9f8308;
+        padding: 20px;
+      }
+
+      /* Fake image, just for this example */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      footer {
+            background-color: #654321;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+       .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: 'Times New Roman', Times, serif;
+       }
+
+      #logo {
+          max-width: 400px; /* Adjust the width of the logo as needed */
+          height: 300;
+          display: inline-block;
+          vertical-align: left;
+          margin-right: 0px; /* Adjust the margin between logo and header text */
+      }
+
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row {   
+          flex-direction: column;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+      }
+      </style>
+<body>
+<div class="header">
+  <img id="logo"src="logo.png" alt="logo.png">
+  
+</div>
+
+<div class="navbar">
+  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/home.html">HOME</a>
+  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/Index.html"class="active">INDEX</a>
+  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/about.html">ABOUT</a>
+  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/News%20and%20event.html">NEWS & EVENTS</a>
+  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/community%20resources.html#">COMMUNITY RESOURCES</a>
+  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/jobs.html#advertisement.html">JOBS</a>
+  <a href="file:///C:/Users/Asus/Documents/GROUPING%20ASSIGNMENTS%20IMS458/contact%20us.html">CONTACT</a>
+</div>
+</body>
+
+<div class="footer">
+  <footer>
+      <div class="container">
+          <p>&copy; 2024 Puncak Alam Is Eye On Social. All Right Reserved.</p>
+      </div>
+  </footer>
+  </body>
+  </html>
